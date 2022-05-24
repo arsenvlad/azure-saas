@@ -1,0 +1,381 @@
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="generator" content="Hugo 0.91.2" />
+<meta name="robots" content="index, follow">
+
+
+<link rel="shortcut icon" href="/azure-saas/favicons/favicon.ico" >
+<link rel="apple-touch-icon" href="/azure-saas/favicons/apple-touch-icon-180x180.png" sizes="180x180">
+<link rel="icon" type="image/png" href="/azure-saas/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/azure-saas/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/azure-saas/favicons/android-36x36.png" sizes="36x36">
+<link rel="icon" type="image/png" href="/azure-saas/favicons/android-48x48.png" sizes="48x48">
+<link rel="icon" type="image/png" href="/azure-saas/favicons/android-72x72.png" sizes="72x72">
+<link rel="icon" type="image/png" href="/azure-saas/favicons/android-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/azure-saas/favicons/android-144x144.png" sizes="144x144">
+<link rel="icon" type="image/png" href="/azure-saas/favicons/android-192x192.png" sizes="192x192">
+
+<title>Quick Start | Azure SaaS Dev Kit Docs</title>
+<meta name="description" content="Getting Started with the Azure SaaS Dev Kit">
+<meta property="og:title" content="Quick Start" />
+<meta property="og:description" content="Getting Started with the Azure SaaS Dev Kit" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://azure.github.io/azure-saas/quick-start/" /><meta property="article:section" content="" />
+
+<meta property="article:modified_time" content="2022-05-24T09:51:38-05:00" /><meta property="og:site_name" content="Azure SaaS Dev Kit Docs" />
+
+<meta itemprop="name" content="Quick Start">
+<meta itemprop="description" content="Getting Started with the Azure SaaS Dev Kit">
+<meta itemprop="dateModified" content="2022-05-24T09:51:38-05:00" />
+<meta itemprop="wordCount" content="807">
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Quick Start"/>
+<meta name="twitter:description" content="Getting Started with the Azure SaaS Dev Kit"/>
+
+
+
+
+<link rel="preload" href="/azure-saas/scss/main.min.ca0feee3ad5cfd4d5aa64c87ed6fc54ac55562f627a000399465306ae3bff184.css" as="style">
+<link href="/azure-saas/scss/main.min.ca0feee3ad5cfd4d5aa64c87ed6fc54ac55562f627a000399465306ae3bff184.css" rel="stylesheet" integrity="">
+
+<script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha384-vtXRMe3mGCbOeY7l30aIg8H9p3GdeSe4IFlP6G8JMa7o7lXvnz3GFKzPxzJdPfGK"
+  crossorigin="anonymous"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+<script>
+  $(() => {
+    $(".language-mermaid").wrapInner("<div class=\"mermaid\"></div>");
+    mermaid.init();
+
+    
+    const svg = $(".mermaid svg");
+		svg.removeAttr('height');
+  });
+</script>
+
+
+  </head>
+  <body class="td-page">
+    <header>
+      
+<nav class="js-navbar-scroll navbar navbar-expand navbar-dark flex-column flex-md-row td-navbar">
+        <a class="navbar-brand" href="/azure-saas/">
+		<span class="navbar-logo"></span><span class="font-weight-bold">Azure SaaS Dev Kit Docs</span>
+	</a>
+	<div class="td-navbar-nav-scroll ml-md-auto" id="main_navbar">
+		<ul class="navbar-nav mt-2 mt-lg-0">
+			
+			
+			<li class="nav-item mr-4 mb-2 mb-lg-0">
+				
+				
+				
+				
+				
+				
+				<a class="nav-link" href="/azure-saas/#" ><span>Homepage</span></a>
+			</li>
+			
+			<li class="nav-item mr-4 mb-2 mb-lg-0">
+				
+				
+				
+				
+				
+				
+				<a class="nav-link" href="https://github.com/Azure/azure-saas" target="_blank" ><span>GitHub</span></a>
+			</li>
+			
+			
+			
+		</ul>
+	</div>
+	<div class="navbar-nav d-none d-lg-block"></div>
+</nav>
+
+    </header>
+    <div class="container-fluid td-outer">
+      <div class="td-main">
+        <div class="row flex-xl-nowrap">
+          <aside class="col-12 col-md-3 col-xl-2 td-sidebar d-print-none">
+            
+<div id="td-sidebar-menu" class="td-sidebar__inner">
+  <form class="td-sidebar__search d-flex align-items-center">
+    
+    <button class="btn btn-link td-sidebar__toggle d-md-none p-0 ml-3 fas fa-bars" type="button" data-toggle="collapse" data-target="#td-section-nav" aria-controls="td-docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    </button>
+  </form>
+  <nav class="collapse td-sidebar-nav" id="td-section-nav">
+    <ul class="td-sidebar-nav__section pr-md-3 ul-0">
+      <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-azure-saas-li">
+  <a href="/azure-saas/" title="" class="align-left pl-0 td-sidebar-link td-sidebar-link__section tree-root" id="m-azure-saas"><span class="">Introduction</span></a>
+  <ul class="ul-1">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child active-path" id="m-azure-saasquick-start-li">
+  <a href="/azure-saas/quick-start/" class="align-left pl-0 active td-sidebar-link td-sidebar-link__page" id="m-azure-saasquick-start"><span class="td-sidebar-nav-active-item">Quick Start</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-azure-saasdiagrams-li">
+  <a href="/azure-saas/diagrams/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-azure-saasdiagrams"><span class="">Architecture Diagrams</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-azure-saascomponents-li">
+  <a href="/azure-saas/components/" title="Azure SaaS Dev Kit Components" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-azure-saascomponents"><span class="">Components</span></a>
+  <ul class="ul-2 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-azure-saascomponentsidentity-li">
+  <a href="/azure-saas/components/identity/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-azure-saascomponentsidentity"><span class="">Identity Framework</span></a>
+  <ul class="ul-3 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-azure-saascomponentsidentityidentity-provider-li">
+  <a href="/azure-saas/components/identity/identity-provider/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-azure-saascomponentsidentityidentity-provider"><span class="">Identity Provider</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-azure-saascomponentsidentitypermissions-service-li">
+  <a href="/azure-saas/components/identity/permissions-service/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-azure-saascomponentsidentitypermissions-service"><span class="">SaaS.Permissions.Service</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-azure-saascomponentsidentityidentity-flows-li">
+  <a href="/azure-saas/components/identity/identity-flows/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-azure-saascomponentsidentityidentity-flows"><span class="">Identity Flows</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-azure-saascomponentsidentitycaveats-li">
+  <a href="/azure-saas/components/identity/caveats/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-azure-saascomponentsidentitycaveats"><span class="">Caveats &amp; Limitations</span></a>
+</li>
+  </ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-azure-saascomponentsadmin-service-li">
+  <a href="/azure-saas/components/admin-service/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-azure-saascomponentsadmin-service"><span class="">SaaS.Admin.Service</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-azure-saascomponentssignup-administration-li">
+  <a href="/azure-saas/components/signup-administration/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-azure-saascomponentssignup-administration"><span class="">SaaS.SignupAdministration.Web</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-azure-saascomponentssaas-application-li">
+  <a href="/azure-saas/components/saas-application/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-azure-saascomponentssaas-application"><span class="">SaaS.Application.Web</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-azure-saascomponentssaas-notifications-li">
+  <a href="/azure-saas/components/saas-notifications/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-azure-saascomponentssaas-notifications"><span class="">SaaS.Notifications</span></a>
+</li>
+  </ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-azure-saasresources-li">
+  <a href="/azure-saas/resources/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-azure-saasresources"><span class="">Resources</span></a>
+  <ul class="ul-2 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-azure-saasresourcesbranding-considerations-for-saas-li">
+  <a href="/azure-saas/resources/branding-considerations-for-saas/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-azure-saasresourcesbranding-considerations-for-saas"><span class="">SaaS Branding Considerations</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-azure-saasresourcescontoso-badgemeup-li">
+  <a href="/azure-saas/resources/contoso-badgemeup/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-azure-saasresourcescontoso-badgemeup"><span class="">Contoso BadgeMeUp</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-azure-saasresourcesterminology-li">
+  <a href="/azure-saas/resources/terminology/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-azure-saasresourcesterminology"><span class="">Terminology</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-azure-saasresourcesadditional-recommended-resources-li">
+  <a href="/azure-saas/resources/additional-recommended-resources/" title="Azure Recommended Resources" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-azure-saasresourcesadditional-recommended-resources"><span class="">Additional Recommended Resources</span></a>
+</li>
+  </ul>
+</li>
+  </ul>
+</li>
+    </ul>
+  </nav>
+</div>
+
+          </aside>
+          <aside class="d-none d-xl-block col-xl-2 td-sidebar-toc d-print-none">
+            
+<div class="td-page-meta ml-2 pb-1 pt-2 mb-0">
+<a href="https://github.com/Azure/azure-saas/tree/main/docs/azure-saas-docs/content/en/quick-start.md" class="td-page-meta--view" target="_blank" rel="noopener"><i class="fa fa-file-alt fa-fw"></i> View page source</a>
+  <a href="https://github.com/Azure/azure-saas/edit/main/docs/azure-saas-docs/content/en/quick-start.md" class="td-page-meta--edit" target="_blank" rel="noopener"><i class="fa fa-edit fa-fw"></i> Edit this page</a>
+  <a href="https://github.com/Azure/azure-saas/new/main/docs/azure-saas-docs/content/en/quick-start.md?filename=change-me.md&amp;value=---%0Atitle%3A&#43;%22Long&#43;Page&#43;Title%22%0AlinkTitle%3A&#43;%22Short&#43;Nav&#43;Title%22%0Aweight%3A&#43;100%0Adescription%3A&#43;%3E-%0A&#43;&#43;&#43;&#43;&#43;Page&#43;description&#43;for&#43;heading&#43;and&#43;indexes.%0A---%0A%0A%23%23&#43;Heading%0A%0AEdit&#43;this&#43;template&#43;to&#43;create&#43;your&#43;new&#43;page.%0A%0A%2A&#43;Give&#43;it&#43;a&#43;good&#43;name%2C&#43;ending&#43;in&#43;%60.md%60&#43;-&#43;e.g.&#43;%60getting-started.md%60%0A%2A&#43;Edit&#43;the&#43;%22front&#43;matter%22&#43;section&#43;at&#43;the&#43;top&#43;of&#43;the&#43;page&#43;%28weight&#43;controls&#43;how&#43;its&#43;ordered&#43;amongst&#43;other&#43;pages&#43;in&#43;the&#43;same&#43;directory%3B&#43;lowest&#43;number&#43;first%29.%0A%2A&#43;Add&#43;a&#43;good&#43;commit&#43;message&#43;at&#43;the&#43;bottom&#43;of&#43;the&#43;page&#43;%28%3C80&#43;characters%3B&#43;use&#43;the&#43;extended&#43;description&#43;field&#43;for&#43;more&#43;detail%29.%0A%2A&#43;Create&#43;a&#43;new&#43;branch&#43;so&#43;you&#43;can&#43;preview&#43;your&#43;new&#43;file&#43;and&#43;request&#43;a&#43;review&#43;via&#43;Pull&#43;Request.%0A" class="td-page-meta--child" target="_blank" rel="noopener"><i class="fa fa-edit fa-fw"></i> Create child page</a>
+  <a href="https://github.com/Azure/azure-saas/issues/new?title=Quick%20Start" class="td-page-meta--issue" target="_blank" rel="noopener"><i class="fab fa-github fa-fw"></i> Create documentation issue</a>
+  
+</div>
+
+            
+
+
+<div class="td-toc"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#1-setup-identity-framework">1. Setup Identity Framework</a></li>
+    <li><a href="#2a-running-the-dev-kit-in-your-local-dev-environment">2.a. Running the Dev Kit in your local dev environment</a>
+      <ul>
+        <li><a href="#app-settings">App Settings</a></li>
+      </ul>
+    </li>
+    <li><a href="#2b-deploying-to-azure---entire-solution">2.b. Deploying to Azure - Entire Solution</a>
+      <ul>
+        <li><a href="#how-does-this-work">How does this work?</a></li>
+      </ul>
+    </li>
+    <li><a href="#2c-advanced-deploying-to-azure---single-module">2.c. (Advanced) Deploying to Azure - Single Module</a></li>
+    <li><a href="#3-optional-configure-email-provider">3. (Optional) Configure Email Provider</a></li>
+    <li><a href="#4-integrating-your-application">4. Integrating your application</a></li>
+    <li><a href="#more-info">More Info</a></li>
+    <li><a href="#learn-more-about-saas">Learn more about SaaS</a></li>
+  </ul>
+</nav></div>
+
+
+
+            
+
+	
+		
+
+
+
+  
+  
+
+	
+		
+
+
+
+  
+  
+
+	
+
+          </aside>
+          <main class="col-12 col-md-9 col-xl-8 pl-md-5" role="main">
+            
+  
+
+            <nav aria-label="breadcrumb" class="td-breadcrumbs td-breadcrumbs__single">
+  <ol class="breadcrumb">
+  <li class="breadcrumb-item active" aria-current="page">
+    <a href="https://azure.github.io/azure-saas/quick-start/">Quick Start</a>
+  </li>
+  </ol>
+</nav>
+            
+<div class="td-content">
+	<h1>Quick Start</h1>
+	<div class="lead">Getting Started with the Azure SaaS Dev Kit</div>
+	<header class="article-meta">
+		
+
+  
+    
+
+
+  
+    
+
+
+  
+
+		
+	</header>    
+	<p>On this page, you will find instructions for how to run the dev kit in your local environment, how to deploy the solution to Azure, and where to put your application code to customize the solution.</p>
+<blockquote>
+<p>Tip: If you&rsquo;re new here and want to learn what is Azure SaaS Dev Kit, check out the <a href="..">welcome page</a></p>
+</blockquote>
+<h2 id="1-setup-identity-framework">1. Setup Identity Framework</h2>
+<p>This project uses <a href="https://docs.microsoft.com/azure/active-directory-b2c/overview">Azure Active Directory B2C</a> for an IdP (Identity Provider). The first step in setting up this project is to configure a new Azure AD B2C instance to house your local user accounts. You will also need to deploy the <a href="../components/identity/permissions-service">Permissions API</a>, as Azure AD B2C will have a dependency on it.</p>
+<p>To setup the Identity Framework, we have provided a PowerShell script <a href="">here</a> that automates the setup for you. This PowerShell script will output a parameters file that you&rsquo;ll need to provide when deploying the solution to Azure in step 2.b.</p>
+<p>After finishing the IDP setup, you may choose to either run the project locally first or immediately deploy the solution to Azure.</p>
+<h2 id="2a-running-the-dev-kit-in-your-local-dev-environment">2.a. Running the Dev Kit in your local dev environment</h2>
+<ul>
+<li>Install the latest version of <a href="https://visualstudio.microsoft.com/vs/">Visual Studio 2022</a>. You may also use Visual Studio Code, but the solution and projects are targetted at VS2022.</li>
+<li>Clone the repository <code>https://github.com/Azure/azure-saas.git</code> on to your dev machine.</li>
+<li>Open the <code>.sln</code> in the root of the repository. This solution includes all of the modules.</li>
+<li>Depending on the project you wish to run, you&rsquo;ll need to set some secrets to properly setup authentication with Azure AD B2C. See the <a href="#app-settings">App Settings</a> section below.</li>
+</ul>
+<h3 id="app-settings">App Settings</h3>
+<ul>
+<li>Running locally you will need to set some App Settings &amp; User Secrets manually using the <a href="https://docs.microsoft.com/en-us/aspnet/core/security/key-vault-configuration?view=aspnetcore-6.0#secret-storage-in-the-development-environment">.NET Secret Manager</a>.</li>
+<li>Deployed to Azure, these secrets are automatically configured for you and stored in the Azure Key Vault.</li>
+</ul>
+<p>Make sure you check out the <a href="#more-info">readme files</a> in each project&rsquo;s directory for a description of the app settings &amp; secrets you&rsquo;ll need to set in order to run the respective project.</p>
+<h2 id="2b-deploying-to-azure---entire-solution">2.b. Deploying to Azure - Entire Solution</h2>
+<p>Deploying to Azure is easy thanks to our pre-configured ARM (Azure Resource Manager) templates.</p>
+<p>This button will take you to the Azure portal and passing it the template. You&rsquo;ll be asked a few questions, and then the solution will be up and running in just a few minutes. You will need your Azure AD B2C configuration values and secrets from step 1.</p>
+<p><strong>Deployment Coming Soon!</strong></p>
+<!-- raw HTML omitted -->
+<h3 id="how-does-this-work">How does this work?</h3>
+<p>This solution uses a Bicep template which is checked into source control. Whenever changes are detected, a GitHub pipeline compiles the template into an ARM template.</p>
+<blockquote>
+<p>What is Bicep?
+Bicep is a domain-specific language (DSL) that uses declarative syntax to deploy Azure resources. In a Bicep file, you define the infrastructure you want to deploy to Azure, and then use that file throughout the development lifecycle to repeatedly deploy your infrastructure. Your resources are deployed in a consistent manner.</p>
+</blockquote>
+<h2 id="2c-advanced-deploying-to-azure---single-module">2.c. (Advanced) Deploying to Azure - Single Module</h2>
+<p>If you&rsquo;d like to use just one (or more) module from the project, we&rsquo;ve provided <a href="https://docs.microsoft.com/azure/azure-resource-manager/bicep/">Bicep</a> templates to do that as well. In each project directory, you&rsquo;ll find a folder named <code>{ModuleName}.Deployment</code> that contains all the Bicep code you&rsquo;ll need to deploy just that Module. Please be advised that there are certain dependencies that each module requires in order for it to deploy properly. You may find that you need to edit the Bicep templates to match your use case. You will find instructions and a list of dependencies for each module within the <a href="#more-info">module&rsquo;s readme</a>.</p>
+<h2 id="3-optional-configure-email-provider">3. (Optional) Configure Email Provider</h2>
+<p>The SaaS.Notifications module <strong>need page and link</strong> is an Azure Logic App responsible for generating email notifications. By default, there is no email provider configured. If you&rsquo;d like to enable email notifications, you will need to manually configure your email provider connector of choice inside the Logic App. See the instructions <a href="../components/saas-notifications">here</a> to get started.</p>
+<h2 id="4-integrating-your-application">4. Integrating your application</h2>
+<p>Now that you&rsquo;ve seen how to run the code locally as well as deploy your code to Azure (in a repeatable and code-first way), you can integrate your own code into the solution.</p>
+<p>We&rsquo;ve included a basic application within the <code>Saas.Application.Web</code> project that demonstrates a SaaS solution called &ldquo;BadgeMeUp&rdquo;. BadgeMeUp is simply a badge sharing site that <em>Contoso</em> (representing your company) can sell to end customers.</p>
+<blockquote>
+<p>SaaS solutions come in many shapes as sizes. We picked &ldquo;BadgeMeUp&rdquo;, because it&rsquo;s a fairly simple scenario to understand. <a href="../resources/contoso-badgemeup/">You can read more about this particular SaaS scenario here</a>.</p>
+</blockquote>
+<h2 id="more-info">More Info</h2>
+<p>For more information, including deployment instructions, an outline of dependencies, app settings, and more, check out the readme files for each module:</p>
+<ul>
+<li><a href="https://github.com/Azure/azure-saas/tree/main/src/Saas.Admin">SaaS.Admin.Service Readme</a></li>
+<li><a href="https://github.com/Azure/azure-saas/tree/main/src/Saas.Permissions">SaaS.Permissions.Service Readme</a></li>
+<li><a href="https://github.com/Azure/azure-saas/tree/main/src/Saas.SignupAdministration">SaaS.SignupAdministration.Web Readme</a></li>
+<li><a href="https://github.com/Azure/azure-saas/tree/main/src/Saas.Application">SaaS.Application Readme</a></li>
+</ul>
+<h2 id="learn-more-about-saas">Learn more about SaaS</h2>
+<p>There are a plethora of resources to help you on your SaaS journey. They&rsquo;re available in the <a href="../resources/additional-recommended-resources/">SaaS Resources section</a>.</p>
+
+	
+	
+	<div class="text-muted mt-5 pt-3 border-top">
+  Last modified May 24, 2022: <a href="https://github.com/Azure/azure-saas/commit/28f9b5749a6bbb466daefab33a083c7b43fbcdd9">Fix saas-notifications link (28f9b57)</a>
+</div>
+
+</div>
+
+
+          </main>
+        </div>
+      </div>
+      
+<footer class="bg-dark py-5 row d-print-none">
+  <div class="container-fluid mx-sm-5">
+    <div class="row">
+      <div class="col-6 col-sm-4 text-xs-center order-sm-2">
+        
+      </div>
+      <div class="col-6 col-sm-4 text-right text-xs-center order-sm-3">
+        
+      </div>
+      <div class="col-12 col-sm-4 text-center py-2 order-sm-2">
+        
+        
+	
+		
+	
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+    integrity="sha512-UR25UO94eTnCVwjbXozyeVd6ZqpaAE9naiEUBK/A+QDbfSTQFhPGj5lOR6d8tsgbBk84Ggb5A3EkjsOgPRPcKA=="
+    crossorigin="anonymous"></script>
+
+
+
+
+
+<script src='/azure-saas/js/tabpane-persist.js'></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="/azure-saas/js/main.min.6cc4f2e68c1bae5b137f756ede53aa026afaae43271828491e233d4350630be1.js" integrity="sha256-bMTy5owbrlsTf3Vu3lOqAmr6rkMnGChJHiM9Q1BjC&#43;E=" crossorigin="anonymous"></script>
+
+
+
+
+  </body>
+</html>
